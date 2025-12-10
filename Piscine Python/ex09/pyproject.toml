@@ -1,0 +1,12 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ft_color"
+version = "0.0.1"
+description = "A simple Python package to print colored text in terminal."
+authors = [{name = "Kai-Erh YEH", email = "kaierhyeh@gmail.com"}]
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = ">=3.10"
