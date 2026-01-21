@@ -14,13 +14,15 @@ def NULL_not_found(object: any) -> int:
         return 1
     print(type(object))
     return 0
-# Checking bool before int because bool is a subclass of int.
+
 # NaN (Not a Number) is the only value that is not equal to itself:
 #     >>> x = float("NaN")
 #     >>> x == x
 #     False
 #     >>> x != x
 #     True
+
+# Checking bool before int because bool is a subclass of int.
 
 # Nothing = None
 #     empty value, type: NoneType
