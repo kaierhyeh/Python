@@ -1,7 +1,5 @@
-import os
-
-
-def give_bmi(height: list[int | float], weight: list[int | float]) -> list[int | float]:
+def give_bmi(height: list[int | float], weight: list[int | float]) \
+                                                -> list[int | float]:
     """Calculate BMI"""
     # 1. Verify input
     # 1-1. List check
@@ -16,12 +14,14 @@ def give_bmi(height: list[int | float], weight: list[int | float]) -> list[int |
     # 1-4. Number check
     for i, h in enumerate(height):
         if not isinstance(h, (int, float)):
-            raise TypeError(f"Height[{i}] must be int or float, got {type(h).__name__}.")
+            raise TypeError(f"Height[{i}] must be int or float, \
+                                        got {type(h).__name__}.")
         if h <= 0:
             raise ValueError(f"Height[{i}] must be positive, got {h}.")
     for i, w in enumerate(weight):
         if not isinstance(w, (int, float)):
-            raise TypeError(f"Weight[{i}] must be int or float, got {type(w).__name__}.")
+            raise TypeError(f"Weight[{i}] must be int or float, \
+                                        got {type(w).__name__}.")
         if w <= 0:
             raise ValueError(f"Weight[{i}] must be positive, got {w}.")
 
@@ -40,7 +40,8 @@ def apply_limit(bmi: list[int | float], limit: int) -> list[bool]:
         raise ValueError("List cannot be empty.")
     for i, b in enumerate(bmi):
         if not isinstance(b, (int, float)):
-            raise TypeError(f"bmi[{i}] must be int or float, got {type(b).__name__}.")
+            raise TypeError(f"bmi[{i}] must be int or float, \
+                                        got {type(b).__name__}.")
         if b <= 0:
             raise ValueError(f"bmi[{i}] must be positive, got {b}.")
 
