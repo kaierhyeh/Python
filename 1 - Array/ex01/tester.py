@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 from array2D import slice_me
 
 # === Test 1: Normal case ===
