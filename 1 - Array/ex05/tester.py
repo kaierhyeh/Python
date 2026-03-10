@@ -17,3 +17,5 @@ print(ft_invert.__doc__)
 # /r Error:
 # Windows 喜歡用兩個隱形字元來換行：\r\n (CRLF)。
 # Linux/Mac 喜歡用一個隱形字元來換行：\n (LF)。
+# CR = Carriage Return (回車, \r)
+# LF = Line Feed (換行, \n)
