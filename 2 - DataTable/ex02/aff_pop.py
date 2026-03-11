@@ -3,10 +3,9 @@ import matplotlib.pyplot as plt
 import pandas as pd
 from matplotlib.ticker import FuncFormatter  # 用來格式化 Y 軸
 from load_csv import load
-from typing import Optional
 
 
-def parse_numbers(value: object) -> Optional[float]:
+def parse_numbers(value: object) -> float | None:
     """Convert k/M/B to float numerics"""
 
     try:
@@ -37,12 +36,9 @@ def parse_numbers(value: object) -> Optional[float]:
 #     value.strip()       # 系統會跳錯誤
 #     str(value).strip()  # 系統會正常執行
 
-# Optional[float]: 即 value: float | None
-#     表示會回傳 float 但也有可能會給 None。
-
 
 def extract_and_clean_data(dataset: pd.DataFrame, country: str) \
-        -> Optional[pd.Series]:
+        -> pd.Series | None:
     """
     Select a country, filter 1800-2050, and convert strings to numbers.
     """
