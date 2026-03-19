@@ -1,5 +1,5 @@
 # My progress
-|Circle | Project | Language | Description | Score | 
+|Circle | Project | Language | Description | Score |
 |:-----:|:-------:|:--------:|:-----------:|:-----:|
 |0| [Starting](https://github.com/kaierhyeh/Python/tree/main/0%20-%20Starting) | Python | Basics of the Python | ???% |
 |1| [Array](https://github.com/kaierhyeh/Python/tree/main/1%20-%20Array) | Python | Arrays & images | ???% |
@@ -15,4 +15,4 @@ find . -type d -name "__pycache__" -exec rm -r {} +
 ```
 
 ### Preview README.md
-ctrl + shit + V
+ctrl + shift + V
