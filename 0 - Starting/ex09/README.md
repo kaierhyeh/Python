@@ -12,9 +12,10 @@ print(green("This is green"))
 ## Build & Install
 1. How to build the package:
 ```bash
-sudo apt update                       
-sudo apt install python3.10-venv
-python3.10 -m build
+sudo apt update
+sudo apt install python-venv
+python3 -m pip install build
+python3 -m build
 ```
 
 2. How to install the package:
