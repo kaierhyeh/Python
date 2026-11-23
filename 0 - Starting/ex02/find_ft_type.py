@@ -9,6 +9,7 @@ def all_thing_is_obj(object: any) -> int:
         print("Dict :", end=" ")
     elif type(object) == str:
         print(f"{object} is in the kitchen :", end=" ")
+        # end=" ": to end the printed output with a space instead of a newline.
     else:
         print("Type not found")
         return 42
