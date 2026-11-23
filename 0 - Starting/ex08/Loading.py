@@ -22,7 +22,7 @@ def ft_tqdm(lst: range) -> None:
         print(f"\r{percent:3d}%|{bar}| {i}/{total}", end="", flush=True)
         # 3d: at least "3" digits in "decimal"
         # flush=True 不經buffer、無延遲
-        yield item # item is the corresponding element on the lst.
+        yield item  # item is the corresponding element on the lst.
     print()
 
 
