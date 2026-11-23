@@ -49,3 +49,13 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+# python3 sos.py "h$llo" | cat -e
+#     would work, cuz "" expands the env variables.
+#     It'll print h and then the variable $llo, which doesn't exist,
+#     therefore an empty string.
+# python3 sos.py 'h$llo' | cat -e
+#     would not work, cuz '' does not expand the env variables.
+# python3 sos.py "h$SHELL" | cat -e
+#     would work but prints the error message,
+#     cuz it doesn't know how to print "/".
