@@ -46,3 +46,8 @@ def ft_tqdm(lst: range) -> None:
 #         (1, 'a')
 #         (2, 'b')
 #         (3, 'c')
+
+# To install tqdm:
+# 1. python3 -m venv venv
+# 2. source venv/bin/activate
+# 3. pip install tqdm
