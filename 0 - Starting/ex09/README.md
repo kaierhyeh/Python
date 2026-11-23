@@ -12,9 +12,18 @@ print(green("This is green"))
 ## Build & Install
 1. How to build the package:
 ```bash
+# 0. Install venv support (only if missing)
 sudo apt update
-sudo apt install python-venv
+sudo apt install python3-venv
+
+# 1. Create and activate virtual environment
+python3 -m venv venv
+source venv/bin/activate
+
+# 2. Install build inside the virtual environment
 python3 -m pip install build
+
+# 3. Build the package
 python3 -m build
 ```
 
